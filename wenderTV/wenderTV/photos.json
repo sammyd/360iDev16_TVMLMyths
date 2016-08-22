@@ -1,0 +1,34 @@
+{
+  "photos": [
+    {
+      "image": "samplePhoto_01.jpg",
+      "title": "Lunch/Dinner",
+      "location": "The meeting of minds",
+      "date": "Apr 16, 2014"
+    },
+    {
+      "image": "samplePhoto_02.jpg",
+      "title": "Uber-organiser",
+      "location": "Washington DC",
+      "date": "Feb 18, 2015"
+    },
+    {
+      "image": "samplePhoto_03.jpg",
+      "title": "People",
+      "location": "Big room",
+      "date": "Aug 27, 2012"
+    },
+    {
+      "image": "samplePhoto_04.jpg",
+      "title": "Idol Worship",
+      "location": "Heaven",
+      "date": "Dec 22, 1984"
+    },
+    {
+      "image": "samplePhoto_05.jpg",
+      "title": "Beautiful Music",
+      "location": "Inspiration Central",
+      "date": "Jul 1, 2015"
+    }
+  ]
+}

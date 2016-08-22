@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <oneupTemplate mode="oneup caption">
+    <section>
+      {{#photos}}
+        <lockup>
+          <img src="{{image}}" />
+          <title>{{title}}</title>
+          <row>
+            <subtitle>{{location}}</subtitle>
+            <subtitle>{{date}}</subtitle>
+          </row>
+        </lockup>
+      {{/photos}}
+    </section>
+  </oneupTemplate>
+</document>

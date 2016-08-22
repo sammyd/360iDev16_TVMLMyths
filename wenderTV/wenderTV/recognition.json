@@ -1,0 +1,69 @@
+{
+  "title": "Cognition",
+  "presenter": "Cesare Rocchi",
+  "tags": ["thinking", "exploitation"],
+  "duration": "18m 57s",
+  "studio": "Razeware",
+  "format": "Widescreen",
+  "category": "Inspiration",
+  "year": "2015",
+  "videoURL" : "https://wolverine.raywenderlich.com/rwdevcon.com/2015/videos/Cesare-Rocchi-Cognition.mp4",
+  "images": {
+    "hero": "talk-cesare-rocchi-recognition.png"
+  },
+  "closed-captions": true,
+  "rating": "nr",
+  "description": "We are all different and we perceive/think in many different ways. And yet there are many universal patterns when it comes to use our cognition. In this talk, learn how to exploit these universal patterns to create well designed applications.",
+  "language": "English",
+  "recommendations": [
+    { "title": "Craftsmanship", "image": "talk-chris-wagner-craftsmanship.png", "data": "craftsmanship.json"},
+    { "title": "Starting Over", "image": "talk-ellen-shapiro-starting-over.png", "data": "starting-over.json"},
+    { "title": "Identity", "image": "talk-vicki-wenderlich-identity.png", "data": "identity.json"},
+    { "title": "RW Folklore", "image": "talk-marin-todorov-rw-folklore.png", "data": "rw-folklore.json"},
+    { "title": "Teamwork", "image": "talk-ray-wenderlich-teamwork.jpeg", "data": "teamwork.json" }
+  ],
+  "ratings-reviews": {
+    "rw-ratings": {
+      "out-of-five": 3.8,
+      "badge-value": 0.76,
+      "count": 54
+    },
+    "rockrater": {
+      "rock": 57,
+      "ballard": 3,
+      "total": 60,
+      "percentage": 95
+    },
+    "reviews": [
+      {
+        "title": "Zombie Review",
+        "description": "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris.",
+        "name": "B. Sucker",
+        "date": "March 31, 2015"
+      },
+      {
+        "title": "Meaty Review",
+        "description": "Bacon ipsum dolor amet jowl pork flank officia pastrami hamburger prosciutto sed cillum kielbasa. Kielbasa boudin jowl rump magna eiusmod, swine ham deserunt ham hock shankle brisket commodo velit alcatra.",
+        "name": "Bacon Grease",
+        "date": "April 15, 2015"
+      }
+    ]
+  },
+  "people": [
+    {
+      "firstname": "Cesare",
+      "lastname": "Rocchi",
+      "role": "Presenter"
+    },
+    {
+      "firstname": "Greg",
+      "lastname": "Heo",
+      "role": "Cinematographer"
+    },
+    {
+      "firstname": "Christine",
+      "lastname": "Sweigart",
+      "role": "Editor"
+    }
+  ]
+}

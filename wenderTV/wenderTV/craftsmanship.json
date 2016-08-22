@@ -1,0 +1,69 @@
+{
+  "title": "Craftsmanship",
+  "presenter": "Chris Wagner",
+  "tags": ["woodwork", "kraftwerk", "electro-pop"],
+  "duration": "15m 40s",
+  "studio": "Razeware",
+  "format": "Widescreen",
+  "category": "Inspiration",
+  "year": "2015",
+  "videoURL" : "https://wolverine.raywenderlich.com/rwdevcon.com/2015/videos/Chris-Wagner-Craftsmanship.mp4",
+  "images": {
+    "hero": "talk-chris-wagner-craftsmanship.png"
+  },
+  "closed-captions": true,
+  "rating": "nr",
+  "description": "In the world of deadlines and ongoing pressure, we often lose sight of what we set out to achieve. Writing software leaves immense opportunity to sweep things under the rug. It's time to stop cheating ourselves and society. Every one of us is building the future of this world; let's make it great through craftsmanship.",
+  "language": "English",
+  "recommendations": [
+    { "title": "Recognition", "image": "talk-cesare-rocchi-recognition.png", "data": "recognition.json"},
+    { "title": "Starting Over", "image": "talk-ellen-shapiro-starting-over.png", "data": "starting-over.json"},
+    { "title": "Identity", "image": "talk-vicki-wenderlich-identity.png", "data": "identity.json"},
+    { "title": "RW Folklore", "image": "talk-marin-todorov-rw-folklore.png", "data": "rw-folklore.json"},
+    { "title": "Teamwork", "image": "talk-ray-wenderlich-teamwork.jpeg", "data": "teamwork.json" }
+  ],
+  "ratings-reviews": {
+    "rw-ratings": {
+      "out-of-five": 5,
+      "badge-value": 1,
+      "count": 243
+    },
+    "rockrater": {
+      "rock": 480,
+      "ballard": 20,
+      "total": 500,
+      "percentage": 96
+    },
+    "reviews": [
+      {
+        "title": "Zombie Review",
+        "description": "Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris.",
+        "name": "B. Sucker",
+        "date": "March 31, 2015"
+      },
+      {
+        "title": "Meaty Review",
+        "description": "Bacon ipsum dolor amet jowl pork flank officia pastrami hamburger prosciutto sed cillum kielbasa. Kielbasa boudin jowl rump magna eiusmod, swine ham deserunt ham hock shankle brisket commodo velit alcatra.",
+        "name": "Bacon Grease",
+        "date": "April 15, 2015"
+      }
+    ]
+  },
+  "people": [
+    {
+      "firstname": "Chris",
+      "lastname": "Wagner",
+      "role": "Presenter"
+    },
+    {
+      "firstname": "Brian",
+      "lastname": "Moakley",
+      "role": "Cinematographer"
+    },
+    {
+      "firstname": "Christine",
+      "lastname": "Sweigart",
+      "role": "Editor"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "suggestions": [
+    {
+      "title": "rwdevcon"
+    },
+    {
+      "title": "wenderlich"
+    },
+    {
+      "title": "tutorial"
+    }
+  ],
+  "results": [
+    {
+      "template": "video.tvml",
+      "data": "identity.json",
+      "image": "talk-vicki-wenderlich-identity.png",
+      "title": "Identity"
+    },
+    {
+      "template": "video.tvml",
+      "data": "craftsmanship.json",
+      "image": "talk-chris-wagner-craftsmanship.png",
+      "title": "Craftsmanship"
+    },
+    {
+      "template": "video.tvml",
+      "data": "recognition.json",
+      "image": "talk-cesare-rocchi-recognition.png",
+      "title": "Cognition"
+    },
+    {
+      "template": "video.tvml",
+      "data": "rw-folklore.json",
+      "image": "talk-marin-todorov-rw-folklore.png",
+      "title": "RW Folklore"
+    },
+    {
+      "template": "video.tvml",
+      "data": "starting-over.json",
+      "image": "talk-ellen-shapiro-starting-over.png",
+      "title": "Starting Over"
+    },
+    {
+      "template": "video.tvml",
+      "data": "teamwork.json",
+      "image": "talk-ray-wenderlich-teamwork.jpeg",
+      "title": "Teamwork"
+    }
+  ]
+}
