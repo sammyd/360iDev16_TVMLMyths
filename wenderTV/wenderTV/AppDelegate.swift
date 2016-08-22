@@ -30,14 +30,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var appController: TVApplicationController?
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    window = UIWindow(frame: UIScreen.main().bounds)
+    window = UIWindow(frame: UIScreen.main.bounds)
     
     let appControllerContext = TVApplicationControllerContext()
     appControllerContext.launchOptions = [
       "initialJSDependencies" : initialJSDependencies()
     ]
     
-    let javascriptURL = Bundle.main.urlForResource("main",
+    let javascriptURL = Bundle.main.url(forResource: "main",
       withExtension: "js")
     appControllerContext.javaScriptApplicationURL = javascriptURL!
     
@@ -60,8 +60,8 @@ extension AppDelegate {
         "EventHandler",
         "SearchHandler"
       ].flatMap {
-      let url = Bundle.main.urlForResource($0, withExtension: "js")
-      return url?.absoluteString
+        let url = Bundle.main.url(forResource: $0, withExtension: "js")
+        return url?.absoluteString
     }
   }
 }

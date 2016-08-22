@@ -30,7 +30,7 @@ class ChromaKeyPlaybackViewController: AVPlayerViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    guard let chromaKeyURL = chromaKeyURL, backgroundImageURL = backgroundImageURL else { return }
+    guard let chromaKeyURL = chromaKeyURL, let backgroundImageURL = backgroundImageURL else { return }
     
     let avAsset = AVAsset(url: chromaKeyURL)
           

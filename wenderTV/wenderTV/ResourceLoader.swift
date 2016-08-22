@@ -35,7 +35,7 @@ import JavaScriptCore
   }
   
   func loadBundleResource(_ name: String) -> String {
-    let path = Bundle.main.pathForResource(name, ofType: nil)
+    let path = Bundle.main.path(forResource: name, ofType: nil)
     do {
       return try String(contentsOfFile: path!,
         encoding: String.Encoding.utf8)
@@ -46,6 +46,6 @@ import JavaScriptCore
   }
   
   func urlForResource(_ name: String) -> String {
-    return Bundle.main.urlForResource(name, withExtension: nil)!.absoluteString!
+    return Bundle.main.url(forResource: name, withExtension: nil)!.absoluteString
   }
 }
