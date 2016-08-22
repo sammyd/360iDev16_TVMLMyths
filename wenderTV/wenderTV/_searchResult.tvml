@@ -1,5 +1,0 @@
-<lockup template="{{template}}" data='"{{data}}"'
-  presentation="push">
-  <img src="{{image}}" width="512" height="288"/>
-  <title>{{title}}</title>
-</lockup>
