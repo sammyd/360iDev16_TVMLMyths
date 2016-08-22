@@ -24,8 +24,8 @@ import JavaScriptCore
 
 @objc protocol ResourceLoaderExport : JSExport {
   static func create() -> ResourceLoaderExport
-  func loadBundleResource(name: String) -> String
-  func urlForResource(name: String) -> String
+  func loadBundleResource(_ name: String) -> String
+  func urlForResource(_ name: String) -> String
 }
 
 @objc class ResourceLoader: NSObject, ResourceLoaderExport {
@@ -34,18 +34,18 @@ import JavaScriptCore
     return ResourceLoader()
   }
   
-  func loadBundleResource(name: String) -> String {
-    let path = NSBundle.mainBundle().pathForResource(name, ofType: nil)
+  func loadBundleResource(_ name: String) -> String {
+    let path = Bundle.main.path(forResource: name, ofType: nil)
     do {
       return try String(contentsOfFile: path!,
-        encoding: NSUTF8StringEncoding)
+        encoding: String.Encoding.utf8)
     } catch {
       print("There was a problem")
       return ""
     }
   }
   
-  func urlForResource(name: String) -> String {
-    return NSBundle.mainBundle().URLForResource(name, withExtension: nil)!.absoluteString
+  func urlForResource(_ name: String) -> String {
+    return Bundle.main.url(forResource: name, withExtension: nil)!.absoluteString
   }
 }

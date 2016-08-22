@@ -29,15 +29,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
   var appController: TVApplicationController?
 
-  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    window = UIWindow(frame: UIScreen.mainScreen().bounds)
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+
+    window = UIWindow(frame: UIScreen.main.bounds)
     
     let appControllerContext = TVApplicationControllerContext()
     appControllerContext.launchOptions = [
       "initialJSDependencies" : initialJSDependencies()
     ]
     
-    let javascriptURL = NSBundle.mainBundle().URLForResource("main",
+    let javascriptURL = Bundle.main.url(forResource: "main",
       withExtension: "js")
     appControllerContext.javaScriptApplicationURL = javascriptURL!
     
@@ -50,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 extension AppDelegate {
-  private func initialJSDependencies() -> [String] {
+  fileprivate func initialJSDependencies() -> [String] {
     return [
         "mustache.min",
         "ResourceLoader",
@@ -59,7 +60,7 @@ extension AppDelegate {
         "EventHandler",
         "SearchHandler"
       ].flatMap {
-      let url = NSBundle.mainBundle().URLForResource($0, withExtension: "js")
+      let url = Bundle.main.url(forResource: $0, withExtension: "js")
       return url?.absoluteString
     }
   }
@@ -67,11 +68,11 @@ extension AppDelegate {
 
 
 extension AppDelegate : TVApplicationControllerDelegate {
-  func appController(appController: TVApplicationController,
-    evaluateAppJavaScriptInContext jsContext: JSContext) {
+  func appController(_ appController: TVApplicationController,
+    evaluateAppJavaScriptIn jsContext: JSContext) {
       
       jsContext.setObject(ResourceLoader.self,
-        forKeyedSubscript: "NativeResourceLoader")
+        forKeyedSubscript: "NativeResourceLoader" as (NSCopying & NSObjectProtocol)!)
   }
 }
 
