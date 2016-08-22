@@ -1,0 +1,75 @@
+{
+  "title": "Teamwork",
+  "presenter": "Ray Wenderlich",
+  "tags": ["teamwork", "business", "winning"],
+  "duration": "17m 54s",
+  "studio": "Razeware",
+  "format": "Widescreen",
+  "category": "Inspiration",
+  "year": "2015",
+  "videoURL" : "https://wolverine.raywenderlich.com/rwdevcon.com/2015/videos/Ray-Wenderlich-Teamwork.mp4",
+  "images": {
+    "hero": "talk-ray-wenderlich-teamwork.jpeg"
+  },
+  "closed-captions": false,
+  "rating": "nr",
+  "description": "Learn how teamwork lets you dream bigger, through the story of an indie iPhone developer who almost missed out on the greatest opportunity of his life.",
+  "language": "English",
+  "recommendations": [
+    { "title": "Recognition", "image": "talk-cesare-rocchi-recognition.png", "data": "recognition.json"},
+    { "title": "Craftsmanship", "image": "talk-chris-wagner-craftsmanship.png", "data": "craftsmanship.json"},
+    { "title": "Starting Over", "image": "talk-ellen-shapiro-starting-over.png", "data": "starting-over.json"},
+    { "title": "Identity", "image": "talk-vicki-wenderlich-identity.png", "data": "identity.json"},
+    { "title": "RW Folklore", "image": "talk-marin-todorov-rw-folklore.png", "data": "rw-folklore.json"}
+  ],
+  "ratings-reviews": {
+    "rw-ratings": {
+      "out-of-five": 4.8,
+      "badge-value": 0.9,
+      "count": 142
+    },
+    "rockrater": {
+      "rock": 67,
+      "ballard": 1,
+      "total": 68,
+      "percentage": 99
+    },
+    "reviews": [
+      {
+        "title": "Top Rockin’!",
+        "description": "Ray is totes amazing. I want to be more like Ray. His talk was so inspirational, I immediately went out and bought a team. Teamwork FTW!",
+        "name": "I <3 RW",
+        "date": "June 27, 2015"
+      },
+      {
+        "title": "Teamwork",
+        "description": "Teamwork only works if everybody does what I want them to.",
+        "name": "D. Vader",
+        "date": "May 4, 2015"
+      },
+      {
+        "title": "Teamwork Review",
+        "description": "This talk was really inspirational. It makes me sad that I wasn't able to attend last year. Here's to hoping that RWDevCon 2016 is even better!",
+        "name": "Syco Phant",
+        "date": "Apr 1, 2015"
+      }
+    ]
+  },
+  "people": [
+    {
+      "firstname": "Ray",
+      "lastname": "Wenderlich",
+      "role": "Presenter"
+    },
+    {
+      "firstname": "Mic",
+      "lastname": "Pringle",
+      "role": "Cinematographer"
+    },
+    {
+      "firstname": "Christine",
+      "lastname": "Sweigart",
+      "role": "Editor"
+    }
+  ]
+}

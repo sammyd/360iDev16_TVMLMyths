@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+  <descriptiveAlertTemplate>
+    <title>{{title}}</title>
+    <description>{{text}}</description>
+    <button presentation="dismiss">
+      <text>Dismiss</text>
+    </button>
+  </descriptiveAlertTemplate>
+</document>

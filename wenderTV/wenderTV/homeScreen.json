@@ -1,0 +1,106 @@
+{
+  "featured": [
+    {
+      "template": "video.tvml",
+      "data": "identity.json",
+      "image": "rwdevcon-featured.lsr",
+      "title": "Identity",
+      "subtitle": "Vicki Wenderlich talks about being a twin"
+    },
+    {
+      "template": "video.tvml",
+      "data": "starting-over.json",
+      "image": "rwdevcon-featured.lsr",
+      "title": "Starting Over",
+      "subtitle": "Ellen reboots"
+    },
+    {
+      "template": "video.tvml",
+      "data": "rw-folklore.json",
+      "image": "rwdevcon-featured.lsr",
+      "title": "raywenderlich.com Folklore",
+      "subtitle": "Marin wangs on about RW.com"
+    }
+  ],
+  "topSeries": [
+    {
+      "image": "image-series-cover.png",
+      "title": "RWDevCon 2015",
+      "subtitle": "All the action for the RW conference"
+    },
+    {
+      "image": "image-series-cover.png",
+      "title": "Swift 101",
+      "subtitle": "Everybody's favorite of learning Swift"
+    },
+    {
+      "image": "image-series-cover.png",
+      "title": "Custom Controls",
+      "subtitle": "Discover how to create amazing, reusable components"
+    },
+    {
+      "image": "image-series-cover.png",
+      "title": "Core Data",
+      "subtitle": "Well, it can't all be fun"
+    },
+    {
+      "image": "image-series-cover.png",
+      "title": "watchOS 2",
+      "subtitle": "Some much content about such a small device"
+    },
+    {
+      "image": "image-series-cover.png",
+      "title": "iOS 101",
+      "subtitle": "Build an iOS app"
+    },
+    {
+      "image": "image-series-cover.png",
+      "title": "Unity",
+      "subtitle": "Something to do with games"
+    },
+    {
+      "image": "image-series-cover.png",
+      "title": "In-App Purchase",
+      "subtitle": "Seriously, don't bother"
+    }
+  ],
+  "watchlist": [
+    {
+      "template": "video.tvml",
+      "data": "identity.json",
+      "image": "talk-vicki-wenderlich-identity.png",
+      "title": "Identity"
+    },
+    {
+      "template": "video.tvml",
+      "data": "craftsmanship.json",
+      "image": "talk-chris-wagner-craftsmanship.png",
+      "title": "Craftsmanship"
+    },
+    {
+      "template": "video.tvml",
+      "data": "recognition.json",
+      "image": "talk-cesare-rocchi-recognition.png",
+      "title": "Cognition"
+    },
+    {
+      "template": "video.tvml",
+      "data": "rw-folklore.json",
+      "image": "talk-marin-todorov-rw-folklore.png",
+      "title": "RW Folklore"
+    },
+    {
+      "template": "video.tvml",
+      "data": "starting-over.json",
+      "image": "talk-ellen-shapiro-starting-over.png",
+      "title": "Starting Over"
+    },
+    {
+      "template": "video.tvml",
+      "data": "teamwork.json",
+      "image": "talk-ray-wenderlich-teamwork.jpeg",
+      "title": "Teamwork"
+    }
+  ]
+
+}

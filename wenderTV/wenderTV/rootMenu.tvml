@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+  <menuBarTemplate>
+    <menuBar>
+      <menuItem template="homeScreen.tvml" data="homeScreen.json" presentation="menuBar">
+        <title>Videos</title>
+      </menuItem>
+      <menuItem template="search.tvml" data="search.json" presentation="menuBar">
+        <title>Search</title>
+      </menuItem>
+      <menuItem template="photos.tvml" data="photos.json" presentation="menuBar">
+        <title>Photos</title>
+      </menuItem>
+    </menuBar>
+  </menuBarTemplate>
+</document>
