@@ -13,7 +13,15 @@
 
 
   <stackTemplate>
-    <banner>
+    <banner style="height: 250; padding: -100 0 0 0">
+      <row style="tv-align: center; tv-interitem-spacing: 30">
+        <button presentation="playChromaKeyVideo" data='{"videoURL": "https://wolverine.raywenderlich.com/books/tvos-apprentice/TVMLKit/sampleChromaKeyVideo.mp4", "backgroundURL": "https://wolverine.raywenderlich.com/books/tvos-apprentice/TVMLKit/background_beach.jpg"}'>
+          <text>🏖 Beach Welcome</text>
+        </button>
+        <button presentation="playChromaKeyVideo" data='{"videoURL": "https://wolverine.raywenderlich.com/books/tvos-apprentice/TVMLKit/sampleChromaKeyVideo.mp4", "backgroundURL": "https://wolverine.raywenderlich.com/books/tvos-apprentice/TVMLKit/background_moon.jpg"}'>
+          <text>🌜 Moon Welcome</text>
+        </button>
+      </row>
     </banner>
     <collectionList>
       <carousel>

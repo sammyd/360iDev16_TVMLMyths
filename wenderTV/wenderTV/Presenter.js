@@ -34,6 +34,9 @@ class Presenter {
     } else if (presentation === 'playVideo') {
       this._playVideo(data, eventHandler);
       return;
+    } else if (presentation === 'playChromaKeyVideo') {
+      this._playChromaKeyVideo(data);
+      return;
     }
 
     var enhancedData = this._enchancedDataForTemplate(data, template);
@@ -90,6 +93,10 @@ class Presenter {
     
     // 4:
     player.play();
+  }
+  
+  _playChromaKeyVideo(data) {
+    presentChromaKeyVideo(data.videoURL, data.backgroundURL)
   }
 
   _presentMenuBarItem(doc, menuItem) {

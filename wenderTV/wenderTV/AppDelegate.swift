@@ -72,7 +72,13 @@ extension AppDelegate : TVApplicationControllerDelegate {
     evaluateAppJavaScriptIn jsContext: JSContext) {
       
       jsContext.setObject(ResourceLoader.self,
-        forKeyedSubscript: "NativeResourceLoader" as (NSCopying & NSObjectProtocol)!)
+        forKeyedSubscript: "NativeResourceLoader" as NSString)
+    
+    let videoPresenterClosure = chromaKeyVideoPresenter(appController)
+    let castedClosure = unsafeBitCast(videoPresenterClosure, to: AnyObject.self)
+    jsContext.setObject(castedClosure,
+                        forKeyedSubscript: "presentChromaKeyVideo" as NSString)
+
   }
 }
 
