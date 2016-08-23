@@ -78,13 +78,16 @@ fileprivate class ExtendedTVInterfaceCreator: NSObject, TVInterfaceCreating {
 }
 
 private func registerNewCreatorWithInterfaceFactory() {
-  // TODO
+  let factory = TVInterfaceFactory.shared()
+  let newCreator = ExtendedTVInterfaceCreator()
+  factory.extendedInterfaceCreator = newCreator
 }
 
 private func registerNewTVMLElementWithElementFactory() {
-  // TODO
+  TVElementFactory.registerViewElementClass(TVViewElement.self, elementName: CalendarElementName)
 }
 
 private func registerNewStylesWithStyleFactory() {
-  // TODO
+  TVStyleFactory.registerStyleName(CalendarTopColorStyleName, type: .color, inherited: false)
+  TVStyleFactory.registerStyleName(CalendarBottomColorStyleName, type: .color, inherited: false)
 }

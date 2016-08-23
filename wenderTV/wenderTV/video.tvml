@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <document>
+  <head>
+    <style>
+      .redCalendar {
+      calendar-top-color: rgb(242, 82, 75);
+      calendar-bottom-color: #F2D5BC;
+      }
+    </style>
+  </head>
   <productTemplate>
     <banner>
       <infoList>
@@ -21,6 +29,12 @@
           <header>
             <title>Released</title>
           </header>
+          <row>
+            <calendar month="{{released.month}}" day="{{released.day}}"
+            width="110" height="110"
+            style="tv-align: right; margin: 10px 0 0 0;"
+            class="redCalendar" />
+          </row>
         </info>
       </infoList>
       <stack>
