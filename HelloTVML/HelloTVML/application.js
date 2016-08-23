@@ -34,6 +34,9 @@ App.onLaunch = function(options) {
 
   var initialDoc = resourceLoader.getDocument("hello.tvml");
   navigationDocument.pushDocument(initialDoc);
+
+  initialDoc.addEventListener("select", handleEvent);
+  initialDoc.addEventListener("play", handleEvent);
 };
 
 class ResourceLoaderJS {
@@ -46,6 +49,26 @@ class ResourceLoaderJS {
     var docString = this.nativeResourceLoader.loadBundleResource(name);
     
     return this.domParser.parseFromString(docString, "application/xml");
+  }
+}
+
+function playVideo(title, url) {
+  var player = new Player();
+  var video = new MediaItem('video', url);
+  video.title = title;
+  
+  player.playlist = new Playlist();
+  player.playlist.push(video);
+  
+  player.play();
+}
+
+function handleEvent(event) {
+  var buttonId = event.target.getAttribute("id");
+  
+  if(buttonId === "play") {
+    playVideo("Hello TVML!",
+              "https://wolverine.raywenderlich.com/books/tvos-apprentice/helloTVML/hls_playlist.m3u8");
   }
 }
 
