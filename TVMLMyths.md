@@ -46,6 +46,19 @@
 
 ---
 
+![](images/hand.jpeg)
+
+# _Five Myths_ about TVML
+
+1. ~~You have to use a server~~
+2. You write TVML in JavaScript strings
+3. Layout includes data
+4. TVML is for media playback
+5. Either TVML or native
+
+
+---
+
 ![](images/javascript.jpeg)
 
 # [fit] You write TVML in<br>_JavaScript_ strings
@@ -83,6 +96,19 @@ App.onLaunch = function(options) {
 ![](images/coding.jpeg)
 
 # [fit] demo
+
+---
+
+![](images/hand.jpeg)
+
+# _Five Myths_ about TVML
+
+1. ~~You have to use a server~~
+2. ~~You write TVML in JavaScript strings~~
+3. Layout includes data
+4. TVML is for media playback
+5. Either TVML or native
+
 
 ---
 
@@ -255,6 +281,19 @@ class ResourceLoaderJS {
 
 ---
 
+![](images/hand.jpeg)
+
+# _Five Myths_ about TVML
+
+1. ~~You have to use a server~~
+2. ~~You write TVML in JavaScript strings~~
+3. ~~Layout includes data~~
+4. TVML is for media playback
+5. Either TVML or native
+
+
+---
+
 ![](images/tv.jpeg)
 
 # [fit] TVML is for<br>_media_ playback
@@ -268,6 +307,19 @@ class ResourceLoaderJS {
 - Complex nested layouts
 - Great for browsing
 - Apple uses TVML _a lot_
+
+---
+
+![](images/hand.jpeg)
+
+# _Five Myths_ about TVML
+
+1. ~~You have to use a server~~
+2. ~~You write TVML in JavaScript strings~~
+3. ~~Layout includes data~~
+4. ~~TVML is for media playback~~
+5. Either TVML or native
+
 
 ---
 
