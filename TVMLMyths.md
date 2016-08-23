@@ -262,15 +262,54 @@ class ResourceLoaderJS {
 
 ---
 
+# Not _just_ media playback
+
+- ~20 different templates
+- Complex nested layouts
+- Great for browsing
+- Apple uses TVML _a lot_
+
+---
+
 ![](images/laptop-phone.jpeg)
 
 # [fit] Either TVML<br>_or_ native
 
 ---
 
+# Hybrid TVML & "Native"
 
+1. Call native functionality from TVML
+2. Integrate native views into TVML
+3. Use TVML views in native apps
 
+---
 
+# Call Native Functionality from TVML
+
+- Use JavaScriptCore
+- Create native function, vend to JS context
+- Wire it in with JS app
+
+---
+
+![](images/coding.jpeg)
+
+# [fit] demo
+
+---
+
+# Integrate native views into TVML app
+
+- Extend TVML with custom tags
+- Add custom style attributes to TVML
+- Use as regular TVML
+
+---
+
+![](images/coding.jpeg)
+
+# [fit] demo
 
 ---
 
@@ -290,6 +329,24 @@ class ResourceLoaderJS {
 
 # [fit] TVML<br>Limitations
 
+
+---
+
+# TVML Limitations
+
+- Less control over appearance / layout
+- Have to write JavaScript
+- Out of comfort zone
+- Documentation & samples {are|were} terrible
+
+---
+
+# TVML Positives
+
+- Can redeploy app without app review
+- Trivial to use a server
+- Powerful layouts, really easily
+- XML is a _good language_ for declarative layouts
 
 ---
 
