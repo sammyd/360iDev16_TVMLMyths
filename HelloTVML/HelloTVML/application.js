@@ -35,26 +35,6 @@ App.onLaunch = function(options) {
 }
 
 
-App.onWillResignActive = function() {
-
-}
-
-App.onDidEnterBackground = function() {
-
-}
-
-App.onWillEnterForeground = function() {
-    
-}
-
-App.onDidBecomeActive = function() {
-    
-}
-
-App.onWillTerminate = function() {
-    
-}
-
 
 /**
  * This convenience funnction returns an alert template, which can be used to present errors to the user.
