@@ -96,7 +96,7 @@ class Presenter {
   }
   
   _playChromaKeyVideo(data) {
-    presentChromaKeyVideo(data.videoURL, data.backgroundURL)
+    // TODO
   }
 
   _presentMenuBarItem(doc, menuItem) {

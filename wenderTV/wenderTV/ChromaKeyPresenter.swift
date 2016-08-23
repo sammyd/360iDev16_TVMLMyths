@@ -23,24 +23,11 @@
 import Foundation
 import TVMLKit
 
-func chromaKeyVideoPresenter(
-  _ appController: TVApplicationController)
-  -> @convention(block) (String, String) -> () {
-    return {
-      // 1:
-      [weak appController] (videoURL, backgroundURL) in
-      // 2:
-      let chromakeyVC = ChromaKeyPlaybackViewController()
-      chromakeyVC.chromaKeyURL = URL(string: videoURL)
-      chromakeyVC.backgroundImageURL = URL(string: backgroundURL)
-      
-      // 3:
-      DispatchQueue.main.async {
-        // 4:
-        appController?.navigationController
-          .pushViewController(chromakeyVC, animated: true)
-      }
-    }
+func chromaKeyVideoPresenter(_ appController: TVApplicationController) -> @convention(block) (String, String) -> () {
+  return {
+    [weak appController] (videoURL, backgroundURL) in
+    // TODO
+  }
 }
 
 
