@@ -44,9 +44,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-    appController = TVApplicationController(context: appControllerContext, window: window, delegate: .none)
+    appController = TVApplicationController(context: appControllerContext, window: window, delegate: self)
     
     return true
+  }
+}
+
+extension AppDelegate : TVApplicationControllerDelegate {
+  func appController(_ appController: TVApplicationController,
+                     evaluateAppJavaScriptIn jsContext: JSContext) {
+    
+    jsContext.setObject(ResourceLoader.self,
+                        forKeyedSubscript: "NativeResourceLoader" as NSString)
   }
 }
 

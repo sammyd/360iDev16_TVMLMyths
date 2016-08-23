@@ -30,8 +30,23 @@
  * the URL that was used to retrieve the application JavaScript.
  */
 App.onLaunch = function(options) {
-    var alert = createAlert("Hello World!", "Welcome to tvOS");
-    navigationDocument.pushDocument(alert);
+  var resourceLoader = new ResourceLoaderJS(NativeResourceLoader.create());
+
+  var initialDoc = resourceLoader.getDocument("hello.tvml");
+  navigationDocument.pushDocument(initialDoc);
+};
+
+class ResourceLoaderJS {
+  constructor(nativeResourceLoader) {
+    this.nativeResourceLoader = nativeResourceLoader;
+    this.domParser = new DOMParser();
+  }
+  
+  getDocument(name) {
+    var docString = this.nativeResourceLoader.loadBundleResource(name);
+    
+    return this.domParser.parseFromString(docString, "application/xml");
+  }
 }
 
 
