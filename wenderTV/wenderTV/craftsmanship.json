@@ -7,6 +7,11 @@
   "format": "Widescreen",
   "category": "Inspiration",
   "year": "2015",
+  "released": {
+    "day": "25",
+    "month": "May",
+    "year": "2015"
+  },
   "videoURL" : "https://wolverine.raywenderlich.com/rwdevcon.com/2015/videos/Chris-Wagner-Craftsmanship.mp4",
   "images": {
     "hero": "talk-chris-wagner-craftsmanship.png"

@@ -7,6 +7,11 @@
   "format": "Widescreen",
   "category": "Inspiration",
   "year": "2015",
+  "released": {
+    "day": "30",
+    "month": "Mar",
+    "year": "2015"
+  },
   "videoURL" : "https://wolverine.raywenderlich.com/rwdevcon.com/2015/videos/Ray-Wenderlich-Teamwork.mp4",
   "images": {
     "hero": "talk-ray-wenderlich-teamwork.jpeg"

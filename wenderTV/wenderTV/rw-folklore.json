@@ -7,6 +7,11 @@
   "format": "Widescreen",
   "category": "Inspiration",
   "year": "2015",
+  "released": {
+    "day": "10",
+    "month": "Apr",
+    "year": "2015"
+  },
   "videoURL" : "https://wolverine.raywenderlich.com/rwdevcon.com/2015/videos/Marin-Todorov-RW-Folklore.mp4",
   "images": {
     "hero": "talk-marin-todorov-rw-folklore.png"

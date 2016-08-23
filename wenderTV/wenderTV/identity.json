@@ -7,6 +7,11 @@
   "format": "Widescreen",
   "category": "Inspiration",
   "year": "2015",
+  "released": {
+    "day": "16",
+    "month": "May",
+    "year": "2015"
+  },
   "videoURL" : "https://wolverine.raywenderlich.com/rwdevcon.com/2015/videos/Vicki-Wenderlich-Identity.mp4",
   "images": {
     "hero": "talk-vicki-wenderlich-identity.png"

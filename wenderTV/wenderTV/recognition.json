@@ -7,6 +7,11 @@
   "format": "Widescreen",
   "category": "Inspiration",
   "year": "2015",
+  "released": {
+    "day": "03",
+    "month": "June",
+    "year": "2015"
+  },
   "videoURL" : "https://wolverine.raywenderlich.com/rwdevcon.com/2015/videos/Cesare-Rocchi-Cognition.mp4",
   "images": {
     "hero": "talk-cesare-rocchi-recognition.png"

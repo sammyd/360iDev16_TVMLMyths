@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22728B041D6BBA90004630AE /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22728B031D6BBA90004630AE /* CalendarView.swift */; };
+		22728B061D6BBAD6004630AE /* CustomElementRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22728B051D6BBAD6004630AE /* CustomElementRegistration.swift */; };
 		2285690A1BF2C22800932673 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228569091BF2C22800932673 /* AppDelegate.swift */; };
 		228569111BF2C22800932673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 228569101BF2C22800932673 /* Assets.xcassets */; };
 		2285691A1BF2C34800932673 /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228569191BF2C34800932673 /* ResourceLoader.swift */; };
@@ -64,6 +66,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22728B031D6BBA90004630AE /* CalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		22728B051D6BBAD6004630AE /* CustomElementRegistration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomElementRegistration.swift; sourceTree = "<group>"; };
 		228569061BF2C22800932673 /* wenderTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wenderTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		228569091BF2C22800932673 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		228569101BF2C22800932673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,6 +137,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22728B021D6BBA50004630AE /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				22728B031D6BBA90004630AE /* CalendarView.swift */,
+				22728B051D6BBAD6004630AE /* CustomElementRegistration.swift */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
 		228568FD1BF2C22800932673 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +165,7 @@
 		228569081BF2C22800932673 /* wenderTV */ = {
 			isa = PBXGroup;
 			children = (
+				22728B021D6BBA50004630AE /* Custom Views */,
 				2293AB171D6BAAC900BD4B14 /* Video Filtering */,
 				228569181BF2C2D800932673 /* App Resources */,
 				228569091BF2C22800932673 /* AppDelegate.swift */,
@@ -457,11 +471,13 @@
 			files = (
 				2293AB191D6BAAD700BD4B14 /* ChromaKeyFilter.swift in Sources */,
 				2285691A1BF2C34800932673 /* ResourceLoader.swift in Sources */,
+				22728B041D6BBA90004630AE /* CalendarView.swift in Sources */,
 				2285690A1BF2C22800932673 /* AppDelegate.swift in Sources */,
 				2293AB1F1D6BAAF900BD4B14 /* ChromaKeyPlayerViewController.swift in Sources */,
 				2293AB1D1D6BAAEC00BD4B14 /* VideoFilter.swift in Sources */,
 				2293AB1B1D6BAAE300BD4B14 /* ColorUtils.swift in Sources */,
 				2293AB211D6BAB4300BD4B14 /* ChromaKeyPresenter.swift in Sources */,
+				22728B061D6BBAD6004630AE /* CustomElementRegistration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

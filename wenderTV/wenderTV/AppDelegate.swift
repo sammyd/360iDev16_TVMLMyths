@@ -42,6 +42,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       withExtension: "js")
     appControllerContext.javaScriptApplicationURL = javascriptURL!
     
+    registerTVMLExtensions()
+    
     appController = TVApplicationController(
       context: appControllerContext, window: window,
       delegate: self)
