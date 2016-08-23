@@ -27,9 +27,9 @@
 
 1. You have to use a server
 2. You write TVML in JavaScript strings
-3. TVML is for media playback
-4. You can't include native functionality
-5. You can't use TVML from a native app
+3. Layout includes data
+4. TVML is for media playback
+5. Either TVML or native
 
 
 ---
@@ -38,21 +38,11 @@
 
 # [fit] You _have_ to<br>use a _server_
 
-
 ---
 
-# In-bundle TVML
+![](images/coding.jpeg)
 
-- TVML engine just processes text
-- Doesn't care where it comes from
-- Server offers advantages, but not required
-- 
-
-
-
-
-
-
+# [fit] demo
 
 ---
 
@@ -80,6 +70,49 @@ App.onLaunch = function(options) {
 }
 ```
 
+---
+
+# In-bundle TVML
+
+- TVML engine just processes text
+- Doesn't care where it comes from
+- Server offers advantages, but not required
+
+---
+
+![](images/coding.jpeg)
+
+# [fit] demo
+
+---
+
+![](images/tree-cross.jpeg)
+
+# [fit] Layout<br>_includes_ data
+
+---
+
+```xml
+            <infoList>
+              <info>
+                <header>
+                  <title>Presenter</title>
+                </header>
+                <text>Sam Davies</text>
+              </info>
+              <info>
+                <header>
+                  <title>Tags</title>
+                </header>
+                  <text>Short</text>
+                  <text>Glasses</text>
+                  <text>Funny Accent</text>
+              </info>
+            </infoList>
+            <stack>
+              <title>Droning-On II: Return of the Tedium</title>
+            </stack>
+```
 
 ---
 
@@ -101,7 +134,124 @@ App.onLaunch = function(options) {
 
 ---
 
+```javascript
+class ResourceLoaderJS {
+  ...
+  
+  getDocument(name) {
+    var docString = this.nativeResourceLoader.loadBundleResource(name);
 
+    return this.domParser.parseFromString(docString, "application/xml");
+  }
+}
+```
+
+---
+
+```javascript
+class ResourceLoaderJS {
+  ...
+  
+  getDocument(name, data) {
+    data = data || {};
+    var docString = this.nativeResourceLoader.loadBundleResource(name);
+    var rendered = Mustache.render(docString, data);
+
+    return this.domParser.parseFromString(rendered, "application/xml");
+  }
+}
+```
+
+---
+
+```javascript
+class ResourceLoaderJS {
+  ...
+
+  getDocument(name, data) {
+    data = data || {};
+    var docString = this.nativeResourceLoader.loadBundleResource(name);
+    var rendered = Mustache.render(docString, data);
+
+    return this.domParser.parseFromString(rendered, "application/xml");
+  }
+
+  getJSON(name) {
+    var jsonString = this.nativeResourceLoader.loadBundleResource(name);
+    var json = JSON.parse(jsonString);
+    return json;
+  }
+}
+```
+
+---
+
+```xml
+            <infoList>
+              <info>
+                <header>
+                  <title>Presenter</title>
+                </header>
+                <text>Sam Davies</text>
+              </info>
+              <info>
+                <header>
+                  <title>Tags</title>
+                </header>
+                  <text>Short</text>
+                  <text>Glasses</text>
+                  <text>Funny Accent</text>
+              </info>
+            </infoList>
+            <stack>
+              <title>Droning-On II: Return of the Tedium</title>
+            </stack>
+```
+
+---
+
+```xml
+            <infoList>
+              <info>
+                <header>
+                  <title>Presenter</title>
+                </header>
+                <text>{{presenter}}</text>
+              </info>
+              <info>
+                <header>
+                  <title>Tags</title>
+                </header>
+                {{#tags}}
+                  <text>{{.}}</text>
+                {{/tags}}
+              </info>
+            </infoList>
+            <stack>
+              <title>{{title}}</title>
+            </stack>
+```
+
+---
+
+```json
+
+  {
+    "presenter": "Sam Davies",
+    "tags": [
+      "Short",
+      "Glasses",
+      "Funny Accent"
+    ],
+    "title": "Droning-On II: Return of the Tedium"
+  }
+```
+
+---
+
+![](images/coding.jpeg)
+
+# [fit] demo
 
 ---
 
@@ -114,14 +264,12 @@ App.onLaunch = function(options) {
 
 ![](images/laptop-phone.jpeg)
 
-# [fit] You can't<br>include _native_<br>functionality
-
+# [fit] Either TVML<br>_or_ native
 
 ---
 
-![](images/imac.jpeg)
 
-# [fit] You can't<br>use TVML<br>in _native_ apps
+
 
 
 ---
@@ -132,9 +280,9 @@ App.onLaunch = function(options) {
 
 1. ~~You have to use a server~~
 2. ~~You write TVML in JavaScript strings~~
-3. ~~TVML is only for media playback~~
-4. ~~You can't include native functionality~~
-5. ~~You can't use TVML from a native app~~
+3. ~~Layout includes data~~
+4. ~~TVML is for media playback~~
+5. ~~Either TVML or native~~
 
 ---
 
